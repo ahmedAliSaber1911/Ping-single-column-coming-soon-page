@@ -10,6 +10,5 @@ notify.addEventListener("click", ()=>{
     else if(input.checkValidity()){
     input.classList.remove('error')
     errorText.style.display = 'none'
-        
     }
 })

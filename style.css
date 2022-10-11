@@ -46,7 +46,7 @@ p{
 }
 .form{
     display: flex;
-
+    width: 100%;
 }
 input{
     width: 350px;
@@ -88,4 +88,31 @@ button:hover{
 }
 .error{
     border-color: var(--Light-Red);
+}
+
+
+@media screen and (max-width: 500px) {
+    .content{
+        width: 100%;
+    }
+    .form{
+        flex-direction: column;
+        row-gap: 10px;
+    }
+    h1{
+        font-size: 30px;
+    }
+    p{
+        font-size: 20px;
+    }
+    input , button {
+        width: 100%;
+    }
+    .imageContainer{
+        width: 100%;
+    }
+    #error{
+        text-align: center;
+        font-size: 17px;
+    }
 }
